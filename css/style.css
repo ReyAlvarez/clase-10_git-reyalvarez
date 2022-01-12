@@ -1,159 +1,74 @@
-
-
 html {
-    scroll-behavior: smooth;
-    font-family: 'Moon Dance', cursive;
-    font-family: 'Playfair Display', serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    /* background settings begins */
-    background-image: url("../img/geabackground.jpg") ;
-    background-size: cover;
-    /* background-position: center; */
-    color: #c4e9fd;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 2rem;
-    grid-template-areas:
-    " nav nav nav nav nav "
-    "title title title title title"
-    "title title title title title"
-    "footer footer footer footer footer";
+  background: #ffffff;
 }
-.main__nav--container { grid-area: nav; }
-.general__title--container { grid-area: title; }
-.footer { grid-area: footer;}
-
-
-/* background settings ends */
-/* nav_container settings */
-
-.main__nav {
-    
+/* intento generar un grid para toda la pagina - LOGRADO*/
+.container {
+  height: 100%;
 }
 
-.main__nav--container {
-    display: flex;
-    flex-direction: row;
-    flex-flow: nowrap;
-    padding: 1% 1%;
-    justify-content: center;
-    text-align: ;
-    /* align-items: space-evenly; */
-    background-color: #ffffffc2;
-    background-size: contain;
-    width: fit-content;
-    border-color: #755f4e;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
+.bg-nav {
+  background-color: #bf9b77;
+}
+.navbar {
+  animate__bounceInUp
+}
+/* ordeno el nav para que los titulos queden primero y luego los links */
 
-    /* margin-left: 25%; */
-    /* box-shadow: 5px 10px; color:#755f4e7c; */
-}
-.main__nav--li {
-    /* display: flex; */
-    /* flex-flow: row wrap; */
-    justify-content: center;
-    padding-right: 2px;
-    padding-left: 2px;
-}
-/* Removing underline on links */
-a
- {
-    text-decoration: none;
- }
-a:hover {
-    text-decoration: underline;
-}
-li {
-    list-style-type: none;
-}
-.texto__nosotras {
-    display: flex;
-    background-color: #755f4e;
-    background-size: 100%;
-    border-radius: 6px;
-    padding: 1.5%;
-}
-.general__title{
-    margin-bottom: 10%;
-}
+/* aca me gustaria que titulos cambien la poscion pero no entiendo como hacerlo */
+
+/* busco editar el span - LOGRADO ? */
+
+/* quito los puntos de las listas - LOGRADO */
+
 footer {
-    /* display: flex; */
-    width: 100%;
-    height: auto;
-    /* position: auto; */
-    background-color: #755f4ecc;
-    background-size: contain;
-    border-radius: 6px;
+  background-color: #595e55;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #bda796;
+}
+#footer {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#footer li {
+  list-style: none;
+  text-decoration: none;
+}
+.footer__title {
+  padding-top: 1rem;
+  padding-left: 2rem;
 }
 
-.footer__item--li {
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-end;
+.social__container {
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-.social__item {
-    display: flex;
-    justify-content: flex-end;
-    flex-flow: column;
+/* Definiiendo color links */
+a:link {
+  color: #72a5bf;
 }
-.main__nosotras--ph {
-    border: 1rem solid #4683a6;
-    width: 27rem;
-    height: auto;
+a:visited {
+  color: #72a5bf;
 }
-
-/* media querys begin */
-@media (min-width: 600px) {
-    .main__nav--container {
-        flex-direction: row;
-    }
+a:hover {
+  color: red;
 }
-
-
-/* media querys end */
-
-
-/* Imagnes */
-
 
 /* CSS HEX
---dune: #25211f;
---malta: #bda898;
---roman-coffee: #755f4e;
---neptune: #76a4bb;
---mondo: #4d3f33;
---finlandia: #595e57;
---steel-blue: #4683a6;
---river-bed: #47515f;
---korma: #9d4b0e;
-*/
-
-/* SCSS HEX
-$dune: #25211f;
-$malta: #bda898;
-$roman-coffee: #755f4e;
-$neptune: #76a4bb;
-$mondo: #4d3f33;
-$finlandia: #595e57;
-$steel-blue: #4683a6;
-$river-bed: #47515f;
-$korma: #9d4b0e;
-*/
-
-/* SCSS RGB
---dune: rgba(37,33,31,1);
---malta: rgba(189,168,152,1);
---roman-coffee: rgba(117,95,78,1);
---neptune: rgba(118,164,187,1);
---mondo: rgba(77,63,51,1);
---finlandia: rgba(89,94,87,1);
---steel-blue: rgba(70,131,166,1);
---river-bed: rgba(71,81,95,1);
---korma: rgba(157,75,14,1);
-*/
-
+ --dune: #2c2623; marron oscuro
+--quicksand: #bda796; marron clarito
+--roman-coffee: #755f4c; cafe claro
+--glacier: #72a5bf; celeste
+--siam: #595e55; verde tipo musgo
+--steel-blue: #4082aa; steel blue */
