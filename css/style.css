@@ -1,5 +1,7 @@
+
 html {
   scroll-behavior: smooth;
+  font-family: 'Moon Dance', cursive; !important
 }
 
 body {
@@ -13,9 +15,17 @@ body {
 .bg-nav {
   background-color: #bf9b77;
 }
-.navbar {
-  animate__bounceInUp
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background-color: gainsboro;
 }
+
+
+
 /* ordeno el nav para que los titulos queden primero y luego los links */
 
 /* aca me gustaria que titulos cambien la poscion pero no entiendo como hacerlo */
@@ -42,11 +52,21 @@ footer {
   list-style: none;
   text-decoration: none;
 }
+#prod_img {
+  margin-top:n 1rem;
+}
+
 .footer__title {
   padding-top: 1rem;
   padding-left: 2rem;
 }
-
+.main__nosotras {
+  padding-left: 1rem;
+}
+.main__nosotras--container {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
 .social__container {
   width: 10%;
   display: flex;
